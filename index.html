@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>
+        <div class="head d-flex jc-sb">
+            <div class="element-1">
+                <a href="./index.html">
+                    <img id="logo" src="./images/logo.png" alt="logo">
+                </a>
+                <h1>Lorem ipsum dolor<span> sit amet</span></h1>
+            </div>
+            <div class="element-2">
+                <p>Bonjour John Doe</p>
+                <nav>
+                    <a href="#">Contactez-nous</a>
+                    <a href="#">Parrainage</a>
+                    <a href="#">Déconnexion</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="img-head">
+            <!-- <img class="img-head" src="./images/header-page-catalogue.png" alt="boxe"> -->
+        </div>
+        <!-- Je n'ai pas mis l'ensemble dans une section car pas de h2 -->
+        <div class="d-flex jc-sa wrap">
+            <article>
+                <div class="bloc-image">
+                    <img src="./images/gant-boxe-2.png" alt="gande boxe">
+                    <h2>GANTS DE BOXE COMBAT KLIMAX V3</h2>
+                    <p class="bloc-promo">- 45%</p>
+                </div>
+                <div class="bloc-price d-flex jc-sb ai-c">
+                    <a class="btn" href="#">Voir la vente</a>
+                    <span class="first-price">120€</span>
+                    <span class="second-price">65€</span>
+                </div>
+            </article>
+            <article>
+                <div class="bloc-image">
+                    <img src="./images/gant-boxe-1.png" alt="gande boxe">
+                    <h2>GANTS DE BOXE COMBAT KLIMAX V3</h2>
+                    <p class="bloc-promo">- 45%</p>
+                </div>
+                <div class="bloc-price d-flex jc-sb ai-c">
+                    <a class="btn" href="#">Voir la vente</a>
+                    <span class="first-price">120€</span>
+                    <span class="second-price">65€</span>
+                </div>
+            </article>
+        </div>
+
+        <!-- séparé par deux container j'ai essayé les 4 articles en flex grow mais je perdais trop temps dessus donc j'ai pris cette option pour ne pas perdre de temps - a réessayer avec flex grow shrink et basis avec plus de temps-->
+
+        <div class="d-flex jc-sa wrap">
+            <article>
+                <div class="bloc-image">
+                    <img src="./images/gant-boxe-2.png" alt="gande boxe">
+                    <h2>GANTS DE BOXE COMBAT KLIMAX V3</h2>
+                    <p class="bloc-promo">- 45%</p>
+                </div>
+                <div class="bloc-price d-flex jc-sb ai-c">
+                    <a class="btn" href="#">Voir la vente</a>
+                    <span class="first-price">120€</span>
+                    <span class="second-price">65€</span>
+                </div>
+            </article>
+            <article>
+                <div class="bloc-image">
+                    <img src="./images/gant-boxe-1.png" alt="gande boxe">
+                    <h2>GANTS DE BOXE COMBAT KLIMAX V3</h2>
+                    <p class="bloc-promo">- 45%</p>
+                </div>
+                <div class="bloc-price d-flex jc-sb ai-c">
+                    <a class="btn" href="#">Voir la vente</a>
+                    <span class="first-price">120€</span>
+                    <span class="second-price">65€</span>
+                </div>
+            </article>
+        </div>
+        
+
+    </main>
+    <footer>
+        <!-- pas sur que les ronds se fasse comme ça...-->
+        <!-- beaucoup de mal pour faire suivre ce block en responsive j'ia triché avec les media queries selon les tailles d'ecran mais pas terrible je pense -->
+        <div class="footer-links">
+            <div class="info d-flex jc-sb wrap">
+                <a class="element-info" href="#">Qui sommes-nous</a>
+                <span class="puce"></span>
+                <a class="element-info" href="#">Contact</a>
+                <span class="puce"></span>
+                <a class="element-info" href="#">Assistance</a>
+                <span class="puce"></span>
+                <a class="element-info" href="#">CGV</a>
+            </div>
+        </div>
+        <div class="bloc-footer d-flex jc-sb ai-c wrap">
+            <div class="d-flex f-d ai-c flex">
+                <img class="icon" src="./images/icon-livre.png" alt="livre">
+                <p class="text-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolorem.</p>
+            </div>
+            <div class="d-flex f-d ai-c flex">
+                <img class="icon" src="./images/icon-camion.png" alt="camion">
+                <p class="text-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolorem.</p>
+            </div>
+            <div class="d-flex f-d ai-c flex">
+                <img class="icon" src="./images/icon-cadenat.png" alt="cadenas">
+                <p class="text-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolorem.</p>
+            </div>
+            <div class="d-flex f-d ai-c flex">
+                <img class="icon" src="./images/icon-pouce.png" alt="pouce">
+                <p class="text-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolorem.</p>
+            </div>
+        </div>
+        <div class="ta-c m-t">
+            <a href="#">
+                <img class="icon-fac" src="./images/icon-facebook.png" alt="facebook">
+            </a>
+            <a href="#">
+                <img class="icon-soc" src="./images/icon-twitter.png" alt="twitter">
+            </a>
+            <a href="#">
+                <img class="icon-soc" src="./images/icon-linkedin.png" alt="linkedin">
+            </a>
+        </div>
+        <p class="text-footer-copy">&copy; 2013 sport privilège. Tous droits réservés.</p>
+
+        
+    </footer>    
+</body>
+</html>

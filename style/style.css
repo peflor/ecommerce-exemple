@@ -1,0 +1,333 @@
+@font-face {
+    font-family: 'liberation_sans';
+    src: url('../fonts/LiberationSans-Bold-webfont.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'liberation_sans';
+    src: url('../fonts/LiberationSans-Regular-webfont.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+body {
+    margin:0;
+    font-size: 1.125rem;
+    font-family: liberation_sans;    
+    color: #333333;
+    background-color: #1c1c1c;
+}
+
+/* CUSTOM CSS */
+header {
+    max-height: 20vh;
+}
+main, .head {
+    max-width: 1200px;
+    margin: auto;
+}
+main {
+    background-color: #f3f3f3;
+    min-height: 90vh;
+    margin-top: 16px;
+    padding-bottom: 100px;
+}
+footer {
+    background-color: #373737;
+    position: relative;    
+    
+}
+header {
+    background-image: url("../images/background.jpg");    
+}
+#logo {
+    max-width: 250px;
+}
+.element-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin-top: 30px;
+}
+.element-1 h1{
+    font-size:1.4rem;
+    font-weight: normal;    
+}
+h1 span {
+    color:#ea9f05;
+}
+.element-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;    
+}
+.element-2 p{
+    font-size: 1.4rem;
+}
+nav a{
+    text-decoration: none;
+    color: #333333;
+    display: inline-block;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    padding-top: 25px;
+}
+nav a:hover{
+    color:#ea9f05;
+    transition: 500ms;
+}
+.img-head{
+    margin-bottom: 2rem;
+    min-height: 400px;
+    background-image: url('../images/header-page-catalogue.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+article {
+    margin-bottom: 50px;
+}
+.bloc-image {
+    position: relative;
+    box-shadow: 0px 5px 14px 0px rgba(0,0,0,0.41);
+}
+.bloc-image img{
+    margin-bottom: -20px;
+}
+.bloc-image h2 {
+    background-color: #fff;
+    margin-top: -10px;
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 16px;
+}
+.bloc-promo {
+    position: absolute;
+    top: 5px;
+    right: -30px;
+    background-color: #1c1c1c;
+    color:#ea9f05;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    border-radius: 8px;    
+}
+.btn {
+    text-decoration: none;
+    background-color: #1c1c1c;
+    color: #fff;    
+    padding: 5px 40px
+}
+.btn:hover{
+    background-color: #ea9f05;
+    color:#1c1c1c;
+    transition: 500ms;
+}
+.bloc-price span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.first-price {
+    text-decoration: line-through;
+}
+.second-price {
+    color: #ea9f05;
+}
+
+/* optimisé quand on passe directement de desktop a chromebook ou en 576px mobile mais pas optimisé lorsque l'on réduit petit a petit l'écran. A retravailler */
+/* .footer-links {
+    position:relative;
+} */
+.info {
+    position: relative;
+    top:-40px;     
+    text-align: center;
+    background-color: #fff;
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px 60px;    
+    border-radius: 10px;    
+}
+.element-info {
+    text-decoration: none;
+    color: #1c1c1c;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.element-info:hover {
+    color:#ea9f05;
+    transition: 500ms;
+}
+.puce {    
+    background-color: #d2d2d2;    
+    border-radius: 100% 100%;
+    width:25px;
+    height:auto;
+}
+.bloc-footer {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #d2d2d2;
+}
+.text-footer {
+    color: #fff;
+    text-align: center;
+}
+.icon {
+    max-width: 80px;
+}
+.icon-soc {
+    max-width: 50px;
+    margin-left: 80px;
+}
+.icon-fac {
+    max-width: 25px;
+}   
+.text-footer-copy {
+    color: #fff;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+}   
+/* FLEX */
+
+.d-flex {
+    display: flex;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+.jc-sa {
+    justify-content: space-around;
+}
+.f-d {
+    flex-direction: column;
+}
+.ai-c {
+    align-items: center;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.flex {
+    flex:1 1 280px;
+}
+
+/* SPACING */
+.m-t {
+    margin-top: 30px;
+}
+.ta-c {
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width:1366px){
+    .head {
+        max-width: 90%;
+    }
+    main{
+        max-width:90%;
+    }
+    
+    /* icone redimensionné a partir de chromebook sinon ça pixeliser */
+    .icon-soc {
+        max-width: 40px;
+        margin-left: 80px;
+    }
+    .icon-fac {
+        max-width: 20px;
+    }
+}
+@media (max-width:770px) {
+    header {
+        max-height: 42vh;
+    }
+    .head {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .element-2 {
+        align-items: flex-start;
+    }
+    .element-2 p {
+        padding-left: 16px;
+    }
+    .element-2 nav {
+        display: flex;               
+    }
+    nav a {
+        padding-top:0;
+        display: block;        
+    }
+}
+@media (max-width:576px) {
+    .info {
+        position: relative;
+        top:-40px;         
+        text-align: center;
+        background-color: #fff;
+        max-width: 450px;
+        margin: auto;
+        padding: 25px 1px;    
+        border-radius: 10px;    
+    }
+    .element-info {
+        text-decoration: none;
+        color: #1c1c1c;
+        padding-left: 2px;
+        padding-right: 3px;
+    }
+}
+
+/* pour rentrer dans le 360px j'ai du modifier un peu le design de base */
+@media (max-width:360px) {
+    .info {
+        position: absolute;
+        top:-40px;
+        left: 8%; 
+        text-align: center;
+        background-color: #fff;
+        max-width: 350px;
+        margin: auto;
+        padding: 25px 1px;    
+        border-radius: 10px;    
+    }
+    .info span {
+        display: none;
+    }
+    .element-info {
+        text-decoration: none;
+        color: #1c1c1c;
+        padding-left: 2px;
+        padding-right: 2px;
+        font-size: smaller;
+    }
+    .bloc-promo {
+        right:2px;
+    }
+    nav a{
+        font-size: smaller;
+    }
+    .icon-soc {
+        margin-left: 50px;
+    }
+    .text-footer-copy {
+        font-size: smaller;
+    }
+}
